@@ -367,3 +367,42 @@ Estilo cuando un radio (pestaña) está marcado:
 .btn-2:hover {
     background-color: #b82d26;
 }
+
+/* HORARIO*/
+
+.horario {
+    padding: 100px 0px;
+    background-color: #0d0d0d;
+}
+
+.horario-info h2 {
+    font-size: 75px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.horario-txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt {
+    color: #FFFFFF;
+}
+
+.txt h4 {
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 30px;
+}
+
+.txt p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15 px;
+}
+
+/* MAPA */
