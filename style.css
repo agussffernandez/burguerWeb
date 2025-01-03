@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,800&display=swap');
+
+/* 
+Estilos globales para resetear valores predeterminados: 
+    - Se eliminan los márgenes y rellenos predeterminados.
+    - Se establece el box-sizing como "border-box" para incluir los bordes y rellenos en el tamaño total.
+    - Se elimina la decoración de texto de los enlaces (sin subrayado).
+    - Se eliminan las viñetas de las listas
+*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* 
+Estilo para el fondo y la tipografía del cuerpo de la página
+    - Se establece un color de fondo oscuro (#080202) para el body.
+    - Se utiliza la fuente "Poppins" (de Google Fonts) como la principal, con una fuente de reserva (sans-serif) en caso de que no se cargue la principal.
+*/
+body {
+    background-color: #080202;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* 
+Estilo para el contenedor principal:
+    - Se establece un ancho máximo de 1200px para el contenedor.
+    - El contenedor se centra en la página con márgenes automáticos en los lados.
+*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*Estilos para los botones de navegación del swiper (anterior y siguiente)*/
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-next {
+    color: #db241b;
+}
+
+.swiper-button-prev {
+    color: #db241b;
+}
+
+.swiper-pagination-bullet {
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #db241b ;
+}
+
+
+/* MENÚ */
+
+/* 
+Estilos para el contenedor del menú:
+    - Se posiciona de manera absoluta con respecto al contenedor padre más cercano que tenga posición relativa.
+    - El menú se coloca a 20px del borde superior de la página y ocupa todo el ancho disponible (izquierda y derecha).
+    - Se utiliza flexbox para centrar el contenido dentro del contenedor del menú en el eje horizontal (y opcionalmente en el vertical).
+    - El z-index asegura que el menú quede por encima de otros elementos en la página.
+*/
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/*Barra de navegación dentro del menú: */
+.navbar{
+    display: flex;
+}
+
+/* Grupos de elementos en el menú:*/
+.menu-1 {
+    margin-right: 180px;
+}
+
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+/*Tamaño logos */
+.logo-1 {
+    width: 0;
+}
+
+.logo-2 {
+    width: 150px;
+}
+/*Iconos sociales*/
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #db241b;
+    border-radius: 50%;
+}
+
+.social:hover {
+    background-color: #db241b;
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #db241b;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
