@@ -406,3 +406,7 @@ Estilo cuando un radio (pestaña) está marcado:
 }
 
 /* MAPA */
+
+.map {
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
