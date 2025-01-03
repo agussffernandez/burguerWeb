@@ -238,6 +238,8 @@ Estilos para el contenedor del menú:
     cursor: pointer;
     color: #A7A7A7;
     font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
